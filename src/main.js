@@ -21,7 +21,7 @@ let currentTab = "base"; // "base" or "dlc"
 const content = document.getElementById("content");
 
 function getQuestProgress(quest) {
-  const completed = quest.steps.filter((s) => progress[s.id]).length;
+  const completed = quest.steps.filter((s) => progress[s.id] === true).length;
   return { completed, total: quest.steps.length };
 }
 
@@ -44,7 +44,7 @@ function getNextIncompleteStep() {
   // Sort by sequenceOrder (or Infinity if no order)
   allDlcSteps.sort((a, b) => (a.sequenceOrder || Infinity) - (b.sequenceOrder || Infinity));
 
-  // Find first incomplete step
+  // Find first incomplete step (0 or undefined, but not 1 or 2)
   return allDlcSteps.find((step) => !progress[step.id]) || null;
 }
 
@@ -81,9 +81,10 @@ function renderQuestList() {
         <div class="next-step__title">${nextStep.title}</div>
         <div class="next-step__description">${nextStep.description}</div>
         <div class="next-step__action">
-          <label>
-            <input type="checkbox" class="next-step__checkbox" data-step-id="${nextStep.id}" />
-            <span>Mark Complete</span>
+          <label class="next-step__label-action">
+            <input type="checkbox" class="next-step__checkbox" data-step-id="${nextStep.id}" ${progress[nextStep.id] ? "checked" : ""} />
+            <span class="next-step__check-icon"></span>
+            <span>Step complete</span>
           </label>
         </div>
       </div>
@@ -190,63 +191,98 @@ function renderQuestDetail(questId) {
   const { completed, total } = getQuestProgress(quest);
   const percent = Math.round((completed / total) * 100);
 
-  const html = `
-    <div class="quest-detail">
-      <button class="back-button">&larr; All Quests</button>
-      <div class="quest-detail__header">
-        <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : quest.category === "dlc" ? "Shadow of the Erdtree" : "Side Quest"}</div>
-        <h2 class="quest-detail__name">${quest.npc}</h2>
-        <p class="quest-card__location">${quest.location}</p>
-        <p class="quest-detail__desc">${quest.description}</p>
-        <div class="quest-detail__progress">
-          <div class="progress-bar progress-bar--large">
-            <div class="progress-bar__fill" style="width: ${percent}%"></div>
+  const modalHtml = `
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <div class="quest-detail">
+        <button class="back-button">&larr; Close</button>
+        <div class="quest-detail__header">
+          <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : quest.category === "dlc" ? "Shadow of the Erdtree" : "Side Quest"}</div>
+          <h2 class="quest-detail__name">${quest.npc}</h2>
+          <p class="quest-card__location">${quest.location}</p>
+          <p class="quest-detail__desc">${quest.description}</p>
+          <div class="quest-detail__progress">
+            <div class="progress-bar progress-bar--large">
+              <div class="progress-bar__fill" style="width: ${percent}%"></div>
+            </div>
+            <span class="progress-text">${completed}/${total} steps complete</span>
           </div>
-          <span class="progress-text">${completed}/${total} steps complete</span>
         </div>
+        <ol class="step-list">
+          ${quest.steps
+            .map(
+              (step) => `
+            <li class="step ${progress[step.id] ? "step--done" : ""}">
+              <label class="step__label">
+                <input
+                  type="checkbox"
+                  class="step__checkbox"
+                  data-step-id="${step.id}"
+                  ${progress[step.id] ? "checked" : ""}
+                />
+                <span class="step__check-icon"></span>
+                <div class="step__content">
+                  <span class="step__title">${step.title}</span>
+                  <span class="step__desc">${step.description}</span>
+                  ${step.note ? `<span class="step__note">⚠ ${step.note}</span>` : ""}
+                </div>
+              </label>
+            </li>
+          `
+            )
+            .join("")}
+        </ol>
       </div>
-      <ol class="step-list">
-        ${quest.steps
-          .map(
-            (step) => `
-          <li class="step ${progress[step.id] ? "step--done" : ""}">
-            <label class="step__label">
-              <input
-                type="checkbox"
-                class="step__checkbox"
-                data-step-id="${step.id}"
-                ${progress[step.id] ? "checked" : ""}
-              />
-              <span class="step__check-icon"></span>
-              <div class="step__content">
-                <span class="step__title">${step.title}</span>
-                <span class="step__desc">${step.description}</span>
-                ${step.note ? `<span class="step__note">⚠ ${step.note}</span>` : ""}
-              </div>
-            </label>
-          </li>
-        `
-          )
-          .join("")}
-      </ol>
     </div>
   `;
 
-  content.innerHTML = html;
+  // Create modal container and inject
+  const modal = document.createElement("div");
+  modal.className = "modal";
+  modal.innerHTML = modalHtml;
+  document.body.appendChild(modal);
 
-  // Back button
-  content.querySelector(".back-button").addEventListener("click", () => {
-    renderQuestList();
+  // Back button / Close modal
+  modal.querySelector(".back-button").addEventListener("click", () => {
+    modal.remove();
+    currentView = "list";
+    currentQuestId = null;
   });
 
-  // Checkbox listeners
-  content.querySelectorAll(".step__checkbox").forEach((checkbox) => {
+  // Backdrop close
+  modal.querySelector(".modal-backdrop").addEventListener("click", () => {
+    modal.remove();
+    currentView = "list";
+    currentQuestId = null;
+  });
+
+  // Checkbox listeners - update progress and quest card in background
+  modal.querySelectorAll(".step__checkbox").forEach((checkbox) => {
     checkbox.addEventListener("change", (e) => {
       const stepId = e.target.dataset.stepId;
       progress[stepId] = e.target.checked;
       saveProgress(progress);
-      // Re-render to update progress bar
-      renderQuestDetail(questId);
+
+      // Update step styling in modal
+      const stepEl = modal.querySelector(`[data-step-id="${stepId}"]`).closest(".step");
+      stepEl.classList.toggle("step--done");
+
+      // Update modal progress bar
+      const { completed, total } = getQuestProgress(quest);
+      const percent = Math.round((completed / total) * 100);
+      const progressFill = modal.querySelector(".progress-bar__fill");
+      const progressText = modal.querySelector(".progress-text");
+      progressFill.style.width = percent + "%";
+      progressText.textContent = `${completed}/${total} steps complete`;
+
+      // Update quest card in the list (if visible)
+      const questCard = content.querySelector(`[data-quest-id="${questId}"]`);
+      if (questCard) {
+        const cardProgressFill = questCard.querySelector(".progress-bar__fill");
+        const cardProgressText = questCard.querySelector(".progress-text");
+        cardProgressFill.style.width = percent + "%";
+        cardProgressText.textContent = `${completed}/${total} steps`;
+      }
     });
   });
 }

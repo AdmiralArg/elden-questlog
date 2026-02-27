@@ -1152,13 +1152,13 @@
         "id": "leda-1",
         "title": "Defeat Mohg, Lord of Blood",
         "description": "Defeat Mohg in Mohgwyn Palace to access Miquella's cocoon and unlock the Shadow Realm.",
-        "sequenceOrder": 7
+        "sequenceOrder": 1
       },
       {
         "id": "leda-2",
         "title": "Speak with Leda at the cocoon",
         "description": "Touch Miquella's withered arm at the cocoon. Leda introduces herself and invites you to join the followers of Miquella.",
-        "sequenceOrder": 1
+        "sequenceOrder": 2
       },
       {
         "id": "leda-3",
@@ -1213,7 +1213,7 @@
         "id": "ansbach-1",
         "title": "Speak with Ansbach at Main Gate Cross",
         "description": "Find Sir Ansbach at the Main Gate Cross Site of Grace in Gravesite Plain. Exhaust his dialogue about Miquella's Crosses.",
-        "sequenceOrder": 4
+        "sequenceOrder": 5
       },
       {
         "id": "ansbach-2",
@@ -1271,7 +1271,7 @@
         "id": "hornsent-1",
         "title": "Speak with Hornsent at Three-Path Cross",
         "description": "Receive the Cross Map from Hornsent showing Miquella's Cross locations in Gravesite Plain.",
-        "sequenceOrder": 6
+        "sequenceOrder": 7
       },
       {
         "id": "hornsent-2",
@@ -1323,7 +1323,7 @@
         "id": "thiollier-1",
         "title": "Meet Thiollier at Pillar Path Cross",
         "description": "Find Thiollier at the Pillar Path Cross Site of Grace in Gravesite Plain and speak with him to unlock his merchant services.",
-        "sequenceOrder": 5
+        "sequenceOrder": 6
       },
       {
         "id": "thiollier-2",
@@ -1375,7 +1375,7 @@
         "id": "moore-1",
         "title": "Speak with Moore at Belurat",
         "description": "Find Moore at the Main Gate Cross Site of Grace outside Belurat Tower Settlement. Purchase an item from him to establish dialogue.",
-        "sequenceOrder": 3
+        "sequenceOrder": 4
       },
       {
         "id": "moore-2",
@@ -1434,7 +1434,7 @@
         "id": "freyja-1",
         "title": "Speak with Freyja at Three-Path Cross",
         "description": "Meet Redmane Freyja at the Three-Path Cross Site of Grace in Gravesite Plain. She introduces herself and mentions Hornsent.",
-        "sequenceOrder": 2
+        "sequenceOrder": 3
       },
       {
         "id": "freyja-2",
