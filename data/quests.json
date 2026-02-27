@@ -1,0 +1,232 @@
+[
+  {
+    "id": "ranni",
+    "npc": "Ranni the Witch",
+    "location": "Ranni's Rise, Three Sisters",
+    "description": "A mysterious four-armed witch who seeks to forge a new path for the world, free from the influence of the Greater Will.",
+    "category": "major",
+    "steps": [
+      {
+        "id": "ranni-1",
+        "title": "Meet Ranni at the Church of Elleh",
+        "description": "Ranni appears at night at the Church of Elleh after obtaining Torrent. She gives you the Spirit Calling Bell."
+      },
+      {
+        "id": "ranni-2",
+        "title": "Visit Ranni's Rise",
+        "description": "Travel to the Three Sisters area in northwest Liurnia. Speak with Ranni at the top of her tower to enter her service."
+      },
+      {
+        "id": "ranni-3",
+        "title": "Speak with her followers",
+        "description": "Talk to Blaidd, Iji, and Seluvis at their respective locations near Ranni's Rise."
+      },
+      {
+        "id": "ranni-4",
+        "title": "Find the hidden treasure of Nokron",
+        "description": "Defeat Radahn to open the path to Nokron, Eternal City. Find the Fingerslayer Blade."
+      },
+      {
+        "id": "ranni-5",
+        "title": "Deliver the Fingerslayer Blade",
+        "description": "Bring the blade to Ranni. She gives you the Carian Inverted Statue."
+      },
+      {
+        "id": "ranni-6",
+        "title": "Explore the Divine Tower of Liurnia",
+        "description": "Use the inverted statue at the Carian Study Hall to reach the Divine Tower and obtain the Cursemark of Death."
+      },
+      {
+        "id": "ranni-7",
+        "title": "Enter the Ainsel River Main",
+        "description": "Use the portal at Renna's Rise to reach the Ainsel River. Pick up the Miniature Ranni doll."
+      },
+      {
+        "id": "ranni-8",
+        "title": "Defeat the Baleful Shadow",
+        "description": "Progress through the Ainsel River to fight the Baleful Shadow. Obtain the Discarded Palace Key."
+      },
+      {
+        "id": "ranni-9",
+        "title": "Reach the Moonlight Altar",
+        "description": "Travel through the Lake of Rot and defeat Astel, Naturalborn of the Void. Reach the Moonlight Altar."
+      },
+      {
+        "id": "ranni-10",
+        "title": "Place the Dark Moon Ring",
+        "description": "Put the ring on Ranni's finger at the Cathedral of Manus Celes. This unlocks the Age of Stars ending."
+      }
+    ]
+  },
+  {
+    "id": "alexander",
+    "npc": "Iron Fist Alexander",
+    "location": "Stormhill",
+    "description": "A Living Jar warrior on a journey to become the mightiest warrior of all. A jolly and determined companion.",
+    "category": "side",
+    "steps": [
+      {
+        "id": "alex-1",
+        "title": "Free Alexander in Stormhill",
+        "description": "Find Alexander stuck in the ground near the Saintsbridge grace. Hit him from behind to free him."
+      },
+      {
+        "id": "alex-2",
+        "title": "Meet Alexander at Gael Tunnel",
+        "description": "Find Alexander near the rear entrance of Gael Tunnel in Caelid."
+      },
+      {
+        "id": "alex-3",
+        "title": "Summon Alexander for the Radahn Festival",
+        "description": "Alexander can be summoned during the Starscourge Radahn boss fight at Redmane Castle."
+      },
+      {
+        "id": "alex-4",
+        "title": "Free Alexander in Liurnia",
+        "description": "Find Alexander stuck again south of the Artist's Shack in Liurnia. Use an Oil Pot to free him."
+      },
+      {
+        "id": "alex-5",
+        "title": "Meet Alexander at Mt. Gelmir",
+        "description": "Find Alexander relaxing in a lava pool near Fort Laiedd on Mt. Gelmir."
+      },
+      {
+        "id": "alex-6",
+        "title": "Duel Alexander at Crumbling Farum Azula",
+        "description": "After defeating the Godskin Duo, find Alexander for a final honorable duel. Receive Alexander's Innards and the Shard of Alexander talisman."
+      }
+    ]
+  },
+  {
+    "id": "millicent",
+    "npc": "Millicent",
+    "location": "Church of the Plague, Caelid",
+    "description": "A young woman afflicted by Scarlet Rot, searching for the meaning of her existence and her connection to Malenia.",
+    "category": "major",
+    "steps": [
+      {
+        "id": "mill-1",
+        "title": "Obtain the Unalloyed Gold Needle",
+        "description": "Defeat Commander O'Neil in the Swamp of Aeonia to receive the Unalloyed Gold Needle."
+      },
+      {
+        "id": "mill-2",
+        "title": "Meet Gowry at his shack",
+        "description": "Bring the needle to Gowry at his shack in southern Caelid. He repairs it."
+      },
+      {
+        "id": "mill-3",
+        "title": "Give the needle to Millicent",
+        "description": "Deliver the repaired needle to Millicent at the Church of the Plague."
+      },
+      {
+        "id": "mill-4",
+        "title": "Meet Millicent at Gowry's Shack",
+        "description": "After she recovers, find Millicent at Gowry's Shack where she begins her journey."
+      },
+      {
+        "id": "mill-5",
+        "title": "Give Millicent a prosthetic arm",
+        "description": "Find the Valkyrie's Prosthesis in the Shaded Castle and give it to Millicent at the Erdtree-Gazing Hill."
+      },
+      {
+        "id": "mill-6",
+        "title": "Meet Millicent at the Windmill Village",
+        "description": "After defeating the Godskin Apostle, speak with Millicent at Dominula, Windmill Village."
+      },
+      {
+        "id": "mill-7",
+        "title": "Meet Millicent at the Ancient Snow Valley Ruins",
+        "description": "Find Millicent at the Mountaintops of the Giants near the Ancient Snow Valley Ruins."
+      },
+      {
+        "id": "mill-8",
+        "title": "Meet Millicent at the Prayer Room",
+        "description": "Find Millicent at the Prayer Room in Elphael, Brace of the Haligtree."
+      },
+      {
+        "id": "mill-9",
+        "title": "Help or hinder Millicent",
+        "description": "Choose to assist Millicent against her sisters, or invade her world. Your choice determines the reward."
+      }
+    ]
+  },
+  {
+    "id": "blaidd",
+    "npc": "Blaidd the Half-Wolf",
+    "location": "Mistwood Ruins, Limgrave",
+    "description": "A loyal half-wolf companion bound to serve Ranni. A fierce warrior struggling between duty and fate.",
+    "category": "side",
+    "steps": [
+      {
+        "id": "blaidd-1",
+        "title": "Hear the howling at Mistwood Ruins",
+        "description": "Listen to the mysterious howling at the Mistwood Ruins in Limgrave."
+      },
+      {
+        "id": "blaidd-2",
+        "title": "Learn the snap gesture from Kale",
+        "description": "Ask Merchant Kale about the howling. He teaches you the snap gesture."
+      },
+      {
+        "id": "blaidd-3",
+        "title": "Summon Blaidd at Mistwood",
+        "description": "Use the snap gesture under the ruins to call Blaidd down. He asks for help finding Darriwil."
+      },
+      {
+        "id": "blaidd-4",
+        "title": "Defeat Bloodhound Knight Darriwil",
+        "description": "Fight Darriwil at the Forlorn Hound Evergaol. Blaidd can be summoned for this fight."
+      },
+      {
+        "id": "blaidd-5",
+        "title": "Meet Blaidd at the Siofra River",
+        "description": "Find Blaidd at the Siofra River where he's searching for Nokron's entrance."
+      },
+      {
+        "id": "blaidd-6",
+        "title": "Blaidd joins the Radahn Festival",
+        "description": "Blaidd appears at Redmane Castle and can be summoned against Radahn."
+      },
+      {
+        "id": "blaidd-7",
+        "title": "Find Blaidd at Ranni's Rise (endgame)",
+        "description": "After completing Ranni's quest, find Blaidd outside Ranni's Rise for a tragic conclusion."
+      }
+    ]
+  },
+  {
+    "id": "hyetta",
+    "npc": "Hyetta",
+    "location": "Lake-Facing Cliffs, Liurnia",
+    "description": "A blind maiden searching for the distant light of the Three Fingers, consuming Shabriri Grapes along the way.",
+    "category": "side",
+    "steps": [
+      {
+        "id": "hyetta-1",
+        "title": "Meet Hyetta at the Lake-Facing Cliffs",
+        "description": "Find Hyetta near the Lake-Facing Cliffs grace in Liurnia. Give her a Shabriri Grape."
+      },
+      {
+        "id": "hyetta-2",
+        "title": "Meet Hyetta at the Purified Ruins",
+        "description": "Find Hyetta near the Purified Ruins in Liurnia. Give her a second Shabriri Grape."
+      },
+      {
+        "id": "hyetta-3",
+        "title": "Meet Hyetta at the Gate Town Bridge",
+        "description": "Find Hyetta near the Gate Town Bridge grace. Give her a third Shabriri Grape."
+      },
+      {
+        "id": "hyetta-4",
+        "title": "Meet Hyetta at Bellum Church",
+        "description": "Find Hyetta at Bellum Church. Give her the Fingerprint Grape."
+      },
+      {
+        "id": "hyetta-5",
+        "title": "Meet Hyetta at the Frenzied Flame Proscription",
+        "description": "Find Hyetta at the door to the Three Fingers beneath the Subterranean Shunning-Grounds. She guides you to embrace the flame."
+      }
+    ]
+  }
+]
