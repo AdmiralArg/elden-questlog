@@ -1,0 +1,41 @@
+/* Reset & base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #c8a84e;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  margin-top: 0.4rem;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+/* Placeholder — more styles coming soon */
