@@ -169,8 +169,15 @@ function renderQuestDetail(questId) {
 
 // --- Start ---
 fetch("./data/quests.json")
-  .then((res) => res.json())
+  .then((res) => {
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.json();
+  })
   .then((data) => {
     questData = data;
     renderQuestList();
+  })
+  .catch((err) => {
+    console.error("Failed to load quests:", err);
+    document.getElementById("content").innerHTML = `<p style="color: red;">Error loading quests: ${err.message}</p>`;
   });
