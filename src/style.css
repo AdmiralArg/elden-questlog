@@ -9,33 +9,311 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #1a1a2e;
-  color: #e0e0e0;
+  background: #121219;
+  color: #d4d4d8;
   min-height: 100vh;
+  line-height: 1.5;
 }
 
 #app {
   max-width: 960px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 4rem;
 }
 
-/* Header */
+/* ---- Header ---- */
+
 header {
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #c8a84e;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .subtitle {
-  margin-top: 0.4rem;
-  color: #888;
-  font-size: 0.95rem;
+  margin-top: 0.35rem;
+  color: #6b6b80;
+  font-size: 0.9rem;
 }
 
-/* Placeholder — more styles coming soon */
+/* ---- Quest Grid ---- */
+
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* ---- Quest Card ---- */
+
+.quest-card {
+  background: #1c1c2a;
+  border: 1px solid #2a2a3d;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+}
+
+.quest-card:hover {
+  border-color: #c8a84e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(200, 168, 78, 0.08);
+}
+
+.quest-card--done {
+  border-color: #2d5a3e;
+}
+
+.quest-card--done:hover {
+  border-color: #4a9b6a;
+}
+
+.quest-card__category {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #c8a84e;
+  font-weight: 600;
+}
+
+.quest-card__name {
+  font-size: 1.15rem;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+.quest-card__location {
+  font-size: 0.8rem;
+  color: #6b6b80;
+}
+
+.quest-card__desc {
+  font-size: 0.85rem;
+  color: #8888a0;
+  margin-top: 0.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.quest-card__progress {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* ---- Progress Bar ---- */
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: #2a2a3d;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar--large {
+  height: 6px;
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background: #c8a84e;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.quest-card--done .progress-bar__fill {
+  background: #4a9b6a;
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  color: #6b6b80;
+  white-space: nowrap;
+}
+
+/* ---- Back Button ---- */
+
+.back-button {
+  background: none;
+  border: 1px solid #2a2a3d;
+  color: #8888a0;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: inherit;
+  transition: border-color 0.2s, color 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.back-button:hover {
+  border-color: #c8a84e;
+  color: #c8a84e;
+}
+
+/* ---- Quest Detail ---- */
+
+.quest-detail__header {
+  margin-bottom: 2rem;
+}
+
+.quest-detail__name {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.quest-detail__desc {
+  color: #8888a0;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  max-width: 600px;
+}
+
+.quest-detail__progress {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 400px;
+}
+
+/* ---- Step List ---- */
+
+.step-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.step {
+  background: #1c1c2a;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.step:first-child {
+  border-radius: 8px 8px 2px 2px;
+}
+
+.step:last-child {
+  border-radius: 2px 2px 8px 8px;
+}
+
+.step:only-child {
+  border-radius: 8px;
+}
+
+.step__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+}
+
+.step__checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.step__check-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #3a3a50;
+  border-radius: 50%;
+  margin-top: 1px;
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+}
+
+.step__check-icon::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: border-color 0.2s;
+}
+
+.step--done .step__check-icon {
+  border-color: #4a9b6a;
+  background: #4a9b6a;
+}
+
+.step--done .step__check-icon::after {
+  border-color: #fff;
+}
+
+.step__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.step__title {
+  font-size: 0.95rem;
+  color: #e0e0e8;
+  font-weight: 500;
+}
+
+.step--done .step__title {
+  color: #6b6b80;
+  text-decoration: line-through;
+}
+
+.step__desc {
+  font-size: 0.82rem;
+  color: #6b6b80;
+}
+
+.step--done .step__desc {
+  color: #4a4a5a;
+}
+
+.step:hover {
+  background: #222236;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 600px) {
+  #app {
+    padding: 1.25rem 1rem 3rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .quest-grid {
+    grid-template-columns: 1fr;
+  }
+}
