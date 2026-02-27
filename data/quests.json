@@ -142,7 +142,7 @@
       {
         "id": "goldmask-4",
         "title": "Learn the Law of Regression incantation",
-        "description": "Obtain the Law of Regression from a Godskin Prayerbook or Miriel (Pastor of Vows). You need it to reveal the truth."
+        "description": "Obtain the Golden Order Principia prayerbook (found in Erdtree Sanctuary, Leyndell) and give it to Brother Corhyn or Miriel (Pastor of Vows) to learn Law of Regression."
       },
       {
         "id": "goldmask-5",
@@ -509,7 +509,7 @@
       {
         "id": "sellen-7",
         "title": "Summon Sellen for the Shard-Bearer battle",
-        "description": "A summon sign appears outside the Debate Parlor in Raya Lucaria. Summon Sellen to fight the Shard-Bearer golems with her."
+        "description": "A summon sign appears outside the Raya Lucaria Grand Library. Summon Sellen to fight alongside her against Witch-Hunter Jerren."
       },
       {
         "id": "sellen-8",
@@ -519,7 +519,7 @@
       {
         "id": "sellen-9",
         "title": "Witness Sellen's transformation",
-        "description": "If you sided with Sellen, return to the Debate Parlor. Find Sellen has become a glintstone crab — her body overwhelmed by the Primeval Current. Receive a Witch's Glintstone Crown."
+        "description": "If you sided with Sellen, return to the Raya Lucaria Grand Library. Find Sellen has become a Graven Mass — a grotesque amalgamation of sorceress bodies, overwhelmed by the Primeval Current. Receive a Witch's Glintstone Crown."
       }
     ]
   },
