@@ -25,6 +25,29 @@ function getQuestProgress(quest) {
   return { completed, total: quest.steps.length };
 }
 
+function getNextIncompleteStep() {
+  // Filter to DLC quests only
+  const dlcQuests = questData.filter((q) => q.category === "dlc");
+
+  // Flatten all steps with their quest context
+  const allDlcSteps = [];
+  dlcQuests.forEach((quest) => {
+    quest.steps.forEach((step) => {
+      allDlcSteps.push({
+        ...step,
+        questId: quest.id,
+        npcName: quest.npc,
+      });
+    });
+  });
+
+  // Sort by sequenceOrder (or Infinity if no order)
+  allDlcSteps.sort((a, b) => (a.sequenceOrder || Infinity) - (b.sequenceOrder || Infinity));
+
+  // Find first incomplete step
+  return allDlcSteps.find((step) => !progress[step.id]) || null;
+}
+
 function renderQuestList() {
   currentView = "list";
   currentQuestId = null;
@@ -44,6 +67,37 @@ function renderQuestList() {
     return completed === total && total > 0;
   }).length;
   const overallPercent = totalSteps > 0 ? Math.round((completedSteps / totalSteps) * 100) : 0;
+
+  // Get next step for DLC tab
+  const nextStep = currentTab === "dlc" ? getNextIncompleteStep() : null;
+  const nextStepHtml =
+    currentTab === "dlc"
+      ? nextStep
+        ? `
+    <div class="next-step-section">
+      <div class="next-step">
+        <div class="next-step__label">NEXT STEP</div>
+        <div class="next-step__quest-name">${nextStep.npcName}</div>
+        <div class="next-step__title">${nextStep.title}</div>
+        <div class="next-step__description">${nextStep.description}</div>
+        <div class="next-step__action">
+          <label>
+            <input type="checkbox" class="next-step__checkbox" data-step-id="${nextStep.id}" />
+            <span>Mark Complete</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  `
+        : `
+    <div class="next-step-section">
+      <div class="next-step next-step--complete">
+        <div class="next-step__label">ALL STEPS COMPLETE!</div>
+        <div class="next-step__title">You've completed the Shadow of the Erdtree questlines!</div>
+      </div>
+    </div>
+  `
+      : "";
 
   const html = `
     <div class="tabs">
@@ -69,6 +123,7 @@ function renderQuestList() {
         <div class="progress-bar__fill" style="width: ${overallPercent}%"></div>
       </div>
     </div>
+    ${nextStepHtml}
     <div class="quest-grid">
       ${visibleQuests
         .map((quest) => {
@@ -112,6 +167,17 @@ function renderQuestList() {
       renderQuestDetail(questId);
     });
   });
+
+  // Next step checkbox listener (DLC tab only)
+  const nextStepCheckbox = content.querySelector(".next-step__checkbox");
+  if (nextStepCheckbox) {
+    nextStepCheckbox.addEventListener("change", (e) => {
+      const stepId = e.target.dataset.stepId;
+      progress[stepId] = e.target.checked;
+      saveProgress(progress);
+      renderQuestList(); // Re-render to show next step
+    });
+  }
 }
 
 function renderQuestDetail(questId) {
