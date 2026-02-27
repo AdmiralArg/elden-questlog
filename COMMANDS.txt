@@ -1,0 +1,60 @@
+TERMINAL COMMANDS — ELDEN RING QUEST TRACKER
+=============================================
+
+DEV SERVER
+----------
+npm run dev           Start the local dev server (open http://localhost:5173)
+Ctrl + C              Stop the dev server
+
+
+GIT — THE BASICS
+-----------------
+git status            Show what files have changed or are untracked
+git diff              Show the exact lines that have changed
+git log --oneline     Show the full commit history (one line per commit)
+git log --oneline -5  Show only the last 5 commits
+
+
+GIT — SAVING CHANGES (a commit is a snapshot)
+-----------------------------------------------
+git add filename      Stage a specific file for the next commit
+git add .             Stage ALL changed files (use with care)
+git commit -m "msg"   Create a commit (snapshot) with a short description
+
+
+GIT — UNDOING THINGS
+----------------------
+git diff HEAD~1       See what changed in the most recent commit
+git checkout -- file  Discard unsaved changes to a file (destructive!)
+
+
+GIT — BRANCHES (when you're ready to experiment)
+--------------------------------------------------
+git branch            List all branches
+git branch my-branch  Create a new branch
+git switch my-branch  Switch to a branch
+git switch main       Switch back to main
+
+
+GIT — GITHUB (when you're ready to go online)
+----------------------------------------------
+git remote add origin <url>   Link your local repo to a GitHub repo
+git push -u origin main       Push your code to GitHub for the first time
+git push                      Push new commits after the first time
+git pull                      Pull down changes from GitHub
+
+
+READING THE GIT LOG
+--------------------
+Each line looks like:  abc1234 My commit message
+                       ^^^^^^^
+                       This 7-character code is the commit's unique ID.
+                       You can reference it in other commands.
+
+
+TIPS
+----
+- Run all git commands from inside the project folder
+- To open a terminal in VS Code: press Ctrl + ` (backtick)
+- Tab key autocompletes file names in the terminal
+- Up arrow key recalls your last command
