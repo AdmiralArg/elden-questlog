@@ -1,7 +1,7 @@
 {
   "name": "elden-ring-quest-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Elden Questlog - Track your journey through the Lands Between",
   "main": "index.js",
   "scripts": {
     "dev": "vite",

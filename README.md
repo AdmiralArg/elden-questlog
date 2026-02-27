@@ -1,6 +1,6 @@
-# Elden Ring Quest Tracker
+# Elden Questlog
 
-A web-based quest tracker for **Elden Ring**. Track your progress through all 28 NPC questlines in the Lands Between — never miss a step again.
+A quest tracker for **Elden Ring**. Track your progress through all 28 NPC questlines in the Lands Between — never miss a step again.
 
 ## Features
 
