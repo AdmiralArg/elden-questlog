@@ -283,6 +283,49 @@ function renderQuestDetail(questId) {
         cardProgressFill.style.width = percent + "%";
         cardProgressText.textContent = `${completed}/${total} steps`;
       }
+
+      // Update next-step section if on DLC tab
+      if (currentTab === "dlc") {
+        const nextStep = getNextIncompleteStep();
+        const nextStepSection = content.querySelector(".next-step-section");
+        if (nextStepSection) {
+          if (nextStep) {
+            nextStepSection.innerHTML = `
+              <div class="next-step">
+                <div class="next-step__label">NEXT STEP</div>
+                <div class="next-step__quest-name">${nextStep.npcName}</div>
+                <div class="next-step__title">${nextStep.title}</div>
+                <div class="next-step__description">${nextStep.description}</div>
+                <div class="next-step__action">
+                  <label class="next-step__label-action">
+                    <input type="checkbox" class="next-step__checkbox" data-step-id="${nextStep.id}" />
+                    <span class="next-step__check-icon"></span>
+                    <span>Step complete</span>
+                  </label>
+                </div>
+              </div>
+            `;
+            // Re-attach event listener to updated checkbox
+            const updatedCheckbox = nextStepSection.querySelector(".next-step__checkbox");
+            updatedCheckbox.addEventListener("click", (e2) => {
+              e2.preventDefault();
+              const newStepId = e2.target.dataset.stepId;
+              progress[newStepId] = !progress[newStepId];
+              saveProgress(progress);
+              renderQuestList();
+            });
+          } else {
+            nextStepSection.innerHTML = `
+              <div class="next-step">
+                <div class="next-step next-step--complete">
+                  <div class="next-step__label">ALL STEPS COMPLETE!</div>
+                  <div class="next-step__title">You've completed the Shadow of the Erdtree questlines!</div>
+                </div>
+              </div>
+            `;
+          }
+        }
+      }
     });
   });
 }
