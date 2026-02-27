@@ -1,5 +1,3 @@
-import questData from "../data/quests.json";
-
 // --- State ---
 
 // Load saved progress from localStorage (or start fresh)
@@ -12,6 +10,7 @@ function saveProgress(progress) {
   localStorage.setItem("quest-progress", JSON.stringify(progress));
 }
 
+let questData = [];
 let progress = loadProgress(); // { "ranni-1": true, "alex-3": true, ... }
 let currentView = "list"; // "list" or "detail"
 let currentQuestId = null;
@@ -169,4 +168,9 @@ function renderQuestDetail(questId) {
 }
 
 // --- Start ---
-renderQuestList();
+fetch("./data/quests.json")
+  .then((res) => res.json())
+  .then((data) => {
+    questData = data;
+    renderQuestList();
+  });
