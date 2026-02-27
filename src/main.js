@@ -14,6 +14,7 @@ let questData = [];
 let progress = loadProgress(); // { "ranni-1": true, "alex-3": true, ... }
 let currentView = "list"; // "list" or "detail"
 let currentQuestId = null;
+let currentTab = "base"; // "base" or "dlc"
 
 // --- Rendering ---
 
@@ -28,19 +29,27 @@ function renderQuestList() {
   currentView = "list";
   currentQuestId = null;
 
-  // Calculate overall stats
-  const totalSteps = questData.reduce((sum, q) => sum + q.steps.length, 0);
-  const completedSteps = questData.reduce(
+  const visibleQuests = questData.filter((q) =>
+    currentTab === "dlc" ? q.category === "dlc" : q.category !== "dlc"
+  );
+
+  // Calculate stats for the active tab only
+  const totalSteps = visibleQuests.reduce((sum, q) => sum + q.steps.length, 0);
+  const completedSteps = visibleQuests.reduce(
     (sum, q) => sum + q.steps.filter((s) => progress[s.id]).length,
     0
   );
-  const completedQuests = questData.filter((q) => {
+  const completedQuests = visibleQuests.filter((q) => {
     const { completed, total } = getQuestProgress(q);
     return completed === total && total > 0;
   }).length;
-  const overallPercent = Math.round((completedSteps / totalSteps) * 100);
+  const overallPercent = totalSteps > 0 ? Math.round((completedSteps / totalSteps) * 100) : 0;
 
   const html = `
+    <div class="tabs">
+      <button class="tab ${currentTab === "base" ? "tab--active" : ""}" data-tab="base">Base Game</button>
+      <button class="tab ${currentTab === "dlc" ? "tab--active" : ""}" data-tab="dlc">Shadow of the Erdtree</button>
+    </div>
     <div class="dashboard">
       <div class="dashboard__stats">
         <div class="stat">
@@ -48,7 +57,7 @@ function renderQuestList() {
           <span class="stat__label">Overall</span>
         </div>
         <div class="stat">
-          <span class="stat__value">${completedQuests}/${questData.length}</span>
+          <span class="stat__value">${completedQuests}/${visibleQuests.length}</span>
           <span class="stat__label">Quests</span>
         </div>
         <div class="stat">
@@ -61,7 +70,7 @@ function renderQuestList() {
       </div>
     </div>
     <div class="quest-grid">
-      ${questData
+      ${visibleQuests
         .map((quest) => {
           const { completed, total } = getQuestProgress(quest);
           const percent = Math.round((completed / total) * 100);
@@ -88,7 +97,15 @@ function renderQuestList() {
 
   content.innerHTML = html;
 
-  // Add click listeners to quest cards
+  // Tab click listeners
+  content.querySelectorAll(".tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      currentTab = tab.dataset.tab;
+      renderQuestList();
+    });
+  });
+
+  // Quest card click listeners
   content.querySelectorAll(".quest-card").forEach((card) => {
     card.addEventListener("click", () => {
       const questId = card.dataset.questId;
