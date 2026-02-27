@@ -69,7 +69,7 @@ function renderQuestList() {
 
           return `
           <button class="quest-card ${isDone ? "quest-card--done" : ""}" data-quest-id="${quest.id}">
-            <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : "Side Quest"}</div>
+            <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : quest.category === "dlc" ? "Shadow of the Erdtree" : "Side Quest"}</div>
             <h2 class="quest-card__name">${quest.npc}</h2>
             <p class="quest-card__location">${quest.location}</p>
             <p class="quest-card__desc">${quest.description}</p>
@@ -111,7 +111,7 @@ function renderQuestDetail(questId) {
     <div class="quest-detail">
       <button class="back-button">&larr; All Quests</button>
       <div class="quest-detail__header">
-        <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : "Side Quest"}</div>
+        <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : quest.category === "dlc" ? "Shadow of the Erdtree" : "Side Quest"}</div>
         <h2 class="quest-detail__name">${quest.npc}</h2>
         <p class="quest-card__location">${quest.location}</p>
         <p class="quest-detail__desc">${quest.description}</p>
@@ -138,6 +138,7 @@ function renderQuestDetail(questId) {
               <div class="step__content">
                 <span class="step__title">${step.title}</span>
                 <span class="step__desc">${step.description}</span>
+                ${step.note ? `<span class="step__note">⚠ ${step.note}</span>` : ""}
               </div>
             </label>
           </li>

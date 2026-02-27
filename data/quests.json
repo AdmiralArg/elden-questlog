@@ -1140,5 +1140,295 @@
         "description": "Defeat Knight Bernahl. Receive the Raging Wolf armor set, the Devourer's Scepter, and Beast Champion armor."
       }
     ]
+  },
+  {
+    "id": "leda",
+    "npc": "Needle Knight Leda",
+    "location": "Mohgwyn Palace / Shadow Realm",
+    "description": "A devoted follower of Miquella who leads his companions into the Shadow Realm. Her loyalty is fierce — and her judgment of others, uncompromising.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "leda-1",
+        "title": "Defeat Mohg, Lord of Blood",
+        "description": "Defeat Mohg in Mohgwyn Palace to access Miquella's cocoon and unlock the Shadow Realm."
+      },
+      {
+        "id": "leda-2",
+        "title": "Speak with Leda at the cocoon",
+        "description": "Touch Miquella's withered arm at the cocoon. Leda introduces herself and invites you to join the followers of Miquella."
+      },
+      {
+        "id": "leda-3",
+        "title": "Find Leda's messages",
+        "description": "Discover her messages near Miquella's Crosses in Belurat Tower Settlement and Castle Ensis."
+      },
+      {
+        "id": "leda-4",
+        "title": "Meet Leda at Highroad Cross",
+        "description": "Travel to Scadu Altus and exhaust all dialogue with Leda at the Highroad Cross Site of Grace.",
+        "note": "Speak to all followers before breaking Miquella's Great Rune — that event shifts everyone's dialogue."
+      },
+      {
+        "id": "leda-5",
+        "title": "Break Miquella's Great Rune",
+        "description": "Enter Shadow Keep or cross the bridge east of Bonny Village to trigger the rune-breaking event. Return to Leda for new dialogue.",
+        "note": "Point of no return for early questline dialogue. Speak to Leda, Ansbach, Hornsent, Freyja, and Thiollier first."
+      },
+      {
+        "id": "leda-6",
+        "title": "Choose: defend Hornsent or aid Leda",
+        "description": "At Shadow Keep's battlements, summon signs appear. Choose a side in the conflict between Leda and Hornsent.",
+        "note": "Irreversible. Helping Leda kills Hornsent; defending Hornsent makes Leda hostile."
+      },
+      {
+        "id": "leda-7",
+        "title": "Choose: defend Ansbach or aid Leda",
+        "description": "A second conflict unfolds near Storehouse First Floor. Again, choose which follower to support.",
+        "note": "Irreversible. Helping Leda kills Ansbach; defending Ansbach locks you out of Leda's final encounter."
+      },
+      {
+        "id": "leda-8",
+        "title": "Final confrontation at Enir-Ilim",
+        "description": "Face Leda and her allied followers at the Cleansing Chamber Anteroom. Loot her armor and sword from her corpse."
+      }
+    ]
+  },
+  {
+    "id": "ansbach",
+    "npc": "Sir Ansbach",
+    "location": "Gravesite Plain",
+    "description": "A former servant of Mohg who followed Miquella into the Shadow Realm. He grows increasingly suspicious of Miquella's true intentions.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "ansbach-1",
+        "title": "Speak with Ansbach at Main Gate Cross",
+        "description": "Find Sir Ansbach at the Main Gate Cross Site of Grace in Gravesite Plain. Exhaust his dialogue about Miquella's Crosses."
+      },
+      {
+        "id": "ansbach-2",
+        "title": "Find Miquella's Crosses",
+        "description": "Discover at least two crosses (Belurat Tower Settlement, Scaduview, or Cerulean Coast) and report back to Ansbach."
+      },
+      {
+        "id": "ansbach-3",
+        "title": "Break Miquella's Great Rune",
+        "description": "Progress through Shadow Keep and defeat the Golden Hippopotamus to trigger the rune-breaking event."
+      },
+      {
+        "id": "ansbach-4",
+        "title": "Return to Ansbach at Gravesite Plain",
+        "description": "Speak with him again after the rune breaks. He shares new doubts about Miquella's nature."
+      },
+      {
+        "id": "ansbach-5",
+        "title": "Deliver the Secret Rite Scroll",
+        "description": "At Shadow Keep's Storehouse First Floor, speak to Freyja then inform Ansbach of her choice. Find the Secret Rite Scroll behind bookshelves and give it to him. Rest at a Site of Grace to receive the Letter for Freyja.",
+        "note": "Must be completed before advancing to Enir-Ilim, or Ansbach's quest ends early."
+      },
+      {
+        "id": "ansbach-6",
+        "title": "Survive Leda's invasion",
+        "description": "During Hornsent's questline, choose to help Ansbach against Needle Knight Leda."
+      },
+      {
+        "id": "ansbach-7",
+        "title": "Summon Ansbach at Cleansing Chamber Anteroom",
+        "description": "Summon Sir Ansbach for the NPC allies battle in Enir-Ilim."
+      },
+      {
+        "id": "ansbach-8",
+        "title": "Summon Ansbach for Promised Consort Radahn",
+        "description": "Optionally summon him to assist against the final boss. Collect his dropped items after the fight."
+      }
+    ]
+  },
+  {
+    "id": "hornsent",
+    "npc": "Hornsent",
+    "location": "Three-Path Cross, Gravesite Plain",
+    "description": "A proud warrior who carries a deep grudge against Messmer and the ancient atrocities of the Golden Order. His map of Miquella's Crosses is invaluable.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "hornsent-1",
+        "title": "Speak with Hornsent at Three-Path Cross",
+        "description": "Receive the Cross Map from Hornsent showing Miquella's Cross locations in Gravesite Plain."
+      },
+      {
+        "id": "hornsent-2",
+        "title": "Meet Hornsent at Highroad Cross",
+        "description": "After entering Scadu Altus, find Hornsent again and receive the New Cross Map with four additional cross locations."
+      },
+      {
+        "id": "hornsent-3",
+        "title": "Summon Hornsent at Shadow Keep Main Gate",
+        "description": "Use his summon sign to bring him into the fight against the Golden Hippopotamus boss."
+      },
+      {
+        "id": "hornsent-4",
+        "title": "Choose sides on the battlements",
+        "description": "At Shadow Keep's battlements, choose to help Leda (red summon) or Hornsent (gold summon) in their conflict near the Storehouse elevator."
+      },
+      {
+        "id": "hornsent-5",
+        "title": "Summon Hornsent for Messmer",
+        "description": "Optionally summon Hornsent to fight Messmer the Impaler alongside you in Shadow Keep.",
+        "note": "Summoning him here causes him to invade you afterward in Rauh. Skip this if you want him as an ally at Enir-Ilim."
+      },
+      {
+        "id": "hornsent-6",
+        "title": "Face Hornsent's invasion at Ancient Ruins of Rauh",
+        "description": "If summoned for Messmer, Hornsent invades near the Church of the Bud entrance in the Ancient Ruins of Rauh."
+      },
+      {
+        "id": "hornsent-7",
+        "title": "Final encounter at Enir-Ilim",
+        "description": "If not killed earlier, encounter Hornsent in the final NPC battle at Enir-Ilim."
+      }
+    ]
+  },
+  {
+    "id": "thiollier",
+    "npc": "Thiollier",
+    "location": "Pillar Path Cross, Gravesite Plain",
+    "description": "A devoted follower of St. Trina who followed Miquella into the Shadow Realm hoping to find her. His obsession leads him down a strange and dangerous path.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "thiollier-1",
+        "title": "Meet Thiollier at Pillar Path Cross",
+        "description": "Find Thiollier at the Pillar Path Cross Site of Grace in Gravesite Plain and speak with him to unlock his merchant services."
+      },
+      {
+        "id": "thiollier-2",
+        "title": "Break Miquella's Great Rune",
+        "description": "Defeat the Golden Hippopotamus and progress through Shadow Keep to trigger the rune-breaking event. This advances Thiollier's dialogue."
+      },
+      {
+        "id": "thiollier-3",
+        "title": "Find St. Trina in Stone Coffin Fissure",
+        "description": "Travel south to Stone Coffin Fissure and defeat the Putrescent Knight. Find St. Trina surrounded by purple flowers in the Garden of Deep Purple."
+      },
+      {
+        "id": "thiollier-4",
+        "title": "Drink St. Trina's Nectar",
+        "description": "Imbibe the nectar four or more times until you hear her voice on the death screen. Rest at a Site of Grace between attempts.",
+        "note": "Must be done before Thiollier leaves for Enir-Ilim. Each drink deals damage — rest between attempts."
+      },
+      {
+        "id": "thiollier-5",
+        "title": "Share St. Trina's message with Thiollier",
+        "description": "Attempt to pass on St. Trina's words to Thiollier. He grows angry and hostile."
+      },
+      {
+        "id": "thiollier-6",
+        "title": "Defeat Thiollier's invasion",
+        "description": "Win the PvP battle against Thiollier. Receive St. Trina's Smile as a reward."
+      },
+      {
+        "id": "thiollier-7",
+        "title": "Final dialogue and boss summons",
+        "description": "Speak with Thiollier again at St. Trina's cave. Optionally summon him for the Enir-Ilim battles and the Promised Consort Radahn fight."
+      }
+    ]
+  },
+  {
+    "id": "moore",
+    "npc": "Moore",
+    "location": "Main Gate Cross, Belurat Tower Settlement",
+    "description": "A small Forager Brood creature who serves as a merchant and unlikely companion. His story is tied closely to the cookbooks of his kin.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "moore-1",
+        "title": "Speak with Moore at Belurat",
+        "description": "Find Moore at the Main Gate Cross Site of Grace outside Belurat Tower Settlement. Purchase an item from him to establish dialogue."
+      },
+      {
+        "id": "moore-2",
+        "title": "Meet Thiollier (optional)",
+        "description": "Interact with Thiollier at Pillar Path Cross to unlock additional dialogue options with Moore."
+      },
+      {
+        "id": "moore-3",
+        "title": "Receive the Black Syrup",
+        "description": "Return to Moore at Belurat and speak with him to receive the Black Syrup. Complete this before Moore leaves his location.",
+        "note": "Must be obtained before breaking Miquella's Great Rune — after that, Moore moves on and the syrup is missed permanently."
+      },
+      {
+        "id": "moore-4",
+        "title": "Collect Forager Brood Cookbooks 1–6",
+        "description": "Find the six cookbooks from friendly Forager Brood pests scattered across the Land of Shadow. Cookbook 4 requires using a Warming Stone on a frozen pest."
+      },
+      {
+        "id": "moore-5",
+        "title": "Receive the seventh cookbook from Moore",
+        "description": "After acquiring Cookbook 4, speak to Moore to receive the final cookbook."
+      },
+      {
+        "id": "moore-6",
+        "title": "Break Miquella's Charm",
+        "description": "Progress through the story to the point where Miquella's Charm is broken at the Sealing Tree."
+      },
+      {
+        "id": "moore-7",
+        "title": "Make a dialogue choice",
+        "description": "Choose how to respond to Moore's grief. 'Put it behind you' leads to a boss fight. 'Remain sad forever' causes Moore to die. 'I don't know' delays the decision.",
+        "note": "Permanent and irreversible. Think carefully before choosing."
+      },
+      {
+        "id": "moore-8",
+        "title": "Final confrontation at Enir-Ilim",
+        "description": "If 'Put it behind you' was chosen, fight Moore as part of Leda's allied group battle at Enir-Ilim."
+      }
+    ]
+  },
+  {
+    "id": "freyja",
+    "npc": "Redmane Freyja",
+    "location": "Three-Path Cross, Gravesite Plain",
+    "description": "A veteran knight of Radahn's army who followed Miquella out of loyalty. She struggles with her identity after her lord's defeat.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "freyja-1",
+        "title": "Speak with Freyja at Three-Path Cross",
+        "description": "Meet Redmane Freyja at the Three-Path Cross Site of Grace in Gravesite Plain. She introduces herself and mentions Hornsent."
+      },
+      {
+        "id": "freyja-2",
+        "title": "Summon Freyja for the Dancing Lion (optional)",
+        "description": "Use her summon sign to help defeat the Divine Beast Dancing Lion in Belurat Tower Settlement. Return to Three-Path Cross afterward for additional dialogue.",
+        "note": "Must be done before breaking Miquella's Great Rune — this step becomes unavailable after that event."
+      },
+      {
+        "id": "freyja-3",
+        "title": "Return after breaking Miquella's Great Rune",
+        "description": "After the rune-breaking event, return to Three-Path Cross and exhaust Freyja's dialogue. She mentions striking out on her own.",
+        "note": "Do this before entering Shadow Keep's interior — she relocates to the Storehouse shortly after."
+      },
+      {
+        "id": "freyja-4",
+        "title": "Find Freyja in the Storehouse",
+        "description": "Locate Freyja reading scriptures on the Seventh Floor of Shadow Keep's Storehouse. She needs Sir Ansbach's help."
+      },
+      {
+        "id": "freyja-5",
+        "title": "Deliver the Letter for Freyja",
+        "description": "Speak with Ansbach on the First Floor about Freyja's situation. Obtain the Secret Rite Scroll from the Fourth Floor and give it to Ansbach. Receive the Letter for Freyja."
+      },
+      {
+        "id": "freyja-6",
+        "title": "Give Freyja the letter",
+        "description": "Return to Freyja on the Seventh Floor and deliver Ansbach's letter. She gives you the Golden Lion Shield in return."
+      },
+      {
+        "id": "freyja-7",
+        "title": "Final battle at Enir-Ilim",
+        "description": "Fight Freyja alongside other NPC allies at the Cleansing Chamber Anteroom. Loot her equipment after the battle."
+      }
+    ]
   }
 ]
