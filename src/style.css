@@ -412,7 +412,7 @@ header h1 {
   transition: background 0.3s ease;
 }
 
-.step.step--done {
+.step.step--just-toggled {
   animation: stepComplete 0.6s ease;
 }
 
@@ -588,5 +588,15 @@ header h1 {
 
   .quest-grid {
     grid-template-columns: 1fr;
+  }
+
+  .next-step__description {
+    padding-right: 0;
+  }
+
+  .next-step__action {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
   }
 }

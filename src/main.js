@@ -1,9 +1,20 @@
 // --- State ---
 
+function escapeHtml(str) {
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 // Load saved progress from localStorage (or start fresh)
 function loadProgress() {
   const saved = localStorage.getItem("quest-progress");
-  return saved ? JSON.parse(saved) : {};
+  if (!saved) return {};
+  try {
+    return JSON.parse(saved);
+  } catch {
+    return {};
+  }
 }
 
 function saveProgress(progress) {
@@ -23,6 +34,33 @@ const content = document.getElementById("content");
 function getQuestProgress(quest) {
   const completed = quest.steps.filter((s) => progress[s.id] === true).length;
   return { completed, total: quest.steps.length };
+}
+
+function updateDashboard() {
+  const visibleQuests = questData.filter((q) =>
+    currentTab === "dlc" ? q.category === "dlc" : q.category !== "dlc"
+  );
+  const totalSteps = visibleQuests.reduce((sum, q) => sum + q.steps.length, 0);
+  const completedSteps = visibleQuests.reduce(
+    (sum, q) => sum + q.steps.filter((s) => progress[s.id]).length,
+    0
+  );
+  const completedQuests = visibleQuests.filter((q) => {
+    const { completed, total } = getQuestProgress(q);
+    return completed === total && total > 0;
+  }).length;
+  const overallPercent = totalSteps > 0 ? Math.round((completedSteps / totalSteps) * 100) : 0;
+
+  const stats = content.querySelectorAll(".stat__value");
+  if (stats.length >= 3) {
+    stats[0].textContent = `${overallPercent}%`;
+    stats[1].textContent = `${completedQuests}/${visibleQuests.length}`;
+    stats[2].textContent = `${completedSteps}/${totalSteps}`;
+  }
+  const dashboardFill = content.querySelector(".dashboard .progress-bar__fill");
+  if (dashboardFill) {
+    dashboardFill.style.width = `${overallPercent}%`;
+  }
 }
 
 function getNextIncompleteStep() {
@@ -77,12 +115,12 @@ function renderQuestList() {
     <div class="next-step-section">
       <div class="next-step">
         <div class="next-step__label">NEXT STEP</div>
-        <div class="next-step__quest-name">${nextStep.npcName}</div>
-        <div class="next-step__title">${nextStep.title}</div>
-        <div class="next-step__description">${nextStep.description}</div>
+        <div class="next-step__quest-name">${escapeHtml(nextStep.npcName)}</div>
+        <div class="next-step__title">${escapeHtml(nextStep.title)}</div>
+        <div class="next-step__description">${escapeHtml(nextStep.description)}</div>
         <div class="next-step__action">
           <label class="next-step__label-action">
-            <input type="checkbox" class="next-step__checkbox" data-step-id="${nextStep.id}" ${progress[nextStep.id] ? "checked" : ""} />
+            <input type="checkbox" class="next-step__checkbox" data-step-id="${escapeHtml(nextStep.id)}" ${progress[nextStep.id] ? "checked" : ""} />
             <span class="next-step__check-icon"></span>
             <span>Step complete</span>
           </label>
@@ -129,15 +167,15 @@ function renderQuestList() {
       ${visibleQuests
         .map((quest) => {
           const { completed, total } = getQuestProgress(quest);
-          const percent = Math.round((completed / total) * 100);
-          const isDone = completed === total;
+          const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+          const isDone = completed === total && total > 0;
 
           return `
-          <button class="quest-card ${isDone ? "quest-card--done" : ""}" data-quest-id="${quest.id}">
+          <button class="quest-card ${isDone ? "quest-card--done" : ""}" data-quest-id="${escapeHtml(quest.id)}">
             <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : quest.category === "dlc" ? "Shadow of the Erdtree" : "Side Quest"}</div>
-            <h2 class="quest-card__name">${quest.npc}</h2>
-            <p class="quest-card__location">${quest.location}</p>
-            <p class="quest-card__desc">${quest.description}</p>
+            <h2 class="quest-card__name">${escapeHtml(quest.npc)}</h2>
+            <p class="quest-card__location">${escapeHtml(quest.location)}</p>
+            <p class="quest-card__desc">${escapeHtml(quest.description)}</p>
             <div class="quest-card__progress">
               <div class="progress-bar">
                 <div class="progress-bar__fill" style="width: ${percent}%"></div>
@@ -198,9 +236,9 @@ function renderQuestDetail(questId) {
         <button class="back-button">&larr; Close</button>
         <div class="quest-detail__header">
           <div class="quest-card__category">${quest.category === "major" ? "Major Quest" : quest.category === "dlc" ? "Shadow of the Erdtree" : "Side Quest"}</div>
-          <h2 class="quest-detail__name">${quest.npc}</h2>
-          <p class="quest-card__location">${quest.location}</p>
-          <p class="quest-detail__desc">${quest.description}</p>
+          <h2 class="quest-detail__name">${escapeHtml(quest.npc)}</h2>
+          <p class="quest-card__location">${escapeHtml(quest.location)}</p>
+          <p class="quest-detail__desc">${escapeHtml(quest.description)}</p>
           <div class="quest-detail__progress">
             <div class="progress-bar progress-bar--large">
               <div class="progress-bar__fill" style="width: ${percent}%"></div>
@@ -217,14 +255,14 @@ function renderQuestDetail(questId) {
                 <input
                   type="checkbox"
                   class="step__checkbox"
-                  data-step-id="${step.id}"
+                  data-step-id="${escapeHtml(step.id)}"
                   ${progress[step.id] ? "checked" : ""}
                 />
                 <span class="step__check-icon"></span>
                 <div class="step__content">
-                  <span class="step__title">${step.title}</span>
-                  <span class="step__desc">${step.description}</span>
-                  ${step.note ? `<span class="step__note">⚠ ${step.note}</span>` : ""}
+                  <span class="step__title">${escapeHtml(step.title)}</span>
+                  <span class="step__desc">${escapeHtml(step.description)}</span>
+                  ${step.note ? `<span class="step__note">⚠ ${escapeHtml(step.note)}</span>` : ""}
                 </div>
               </label>
             </li>
@@ -239,22 +277,36 @@ function renderQuestDetail(questId) {
   // Create modal container and inject
   const modal = document.createElement("div");
   modal.className = "modal";
+  modal.setAttribute("role", "dialog");
+  modal.setAttribute("aria-modal", "true");
+  modal.setAttribute("aria-label", `${quest.npc} quest details`);
   modal.innerHTML = modalHtml;
   document.body.appendChild(modal);
 
-  // Back button / Close modal
-  modal.querySelector(".back-button").addEventListener("click", () => {
+  // Focus management
+  const closeButton = modal.querySelector(".back-button");
+  closeButton.focus();
+
+  function closeModal() {
+    document.removeEventListener("keydown", handleEscape);
     modal.remove();
     currentView = "list";
     currentQuestId = null;
-  });
+    // Return focus to the quest card that opened the modal
+    const originCard = content.querySelector(`[data-quest-id="${questId}"]`);
+    if (originCard) originCard.focus();
+  }
+
+  function handleEscape(e) {
+    if (e.key === "Escape") closeModal();
+  }
+  document.addEventListener("keydown", handleEscape);
+
+  // Back button / Close modal
+  closeButton.addEventListener("click", closeModal);
 
   // Backdrop close
-  modal.querySelector(".modal-backdrop").addEventListener("click", () => {
-    modal.remove();
-    currentView = "list";
-    currentQuestId = null;
-  });
+  modal.querySelector(".modal-backdrop").addEventListener("click", closeModal);
 
   // Checkbox listeners - update progress and quest card in background
   modal.querySelectorAll(".step__checkbox").forEach((checkbox) => {
@@ -266,6 +318,8 @@ function renderQuestDetail(questId) {
       // Update step styling in modal
       const stepEl = modal.querySelector(`[data-step-id="${stepId}"]`).closest(".step");
       stepEl.classList.toggle("step--done");
+      stepEl.classList.add("step--just-toggled");
+      stepEl.addEventListener("animationend", () => stepEl.classList.remove("step--just-toggled"), { once: true });
 
       // Update modal progress bar
       const { completed, total } = getQuestProgress(quest);
@@ -274,6 +328,9 @@ function renderQuestDetail(questId) {
       const progressText = modal.querySelector(".progress-text");
       progressFill.style.width = percent + "%";
       progressText.textContent = `${completed}/${total} steps complete`;
+
+      // Update dashboard stats
+      updateDashboard();
 
       // Update quest card in the list (if visible)
       const questCard = content.querySelector(`[data-quest-id="${questId}"]`);
@@ -293,12 +350,12 @@ function renderQuestDetail(questId) {
             nextStepSection.innerHTML = `
               <div class="next-step">
                 <div class="next-step__label">NEXT STEP</div>
-                <div class="next-step__quest-name">${nextStep.npcName}</div>
-                <div class="next-step__title">${nextStep.title}</div>
-                <div class="next-step__description">${nextStep.description}</div>
+                <div class="next-step__quest-name">${escapeHtml(nextStep.npcName)}</div>
+                <div class="next-step__title">${escapeHtml(nextStep.title)}</div>
+                <div class="next-step__description">${escapeHtml(nextStep.description)}</div>
                 <div class="next-step__action">
                   <label class="next-step__label-action">
-                    <input type="checkbox" class="next-step__checkbox" data-step-id="${nextStep.id}" />
+                    <input type="checkbox" class="next-step__checkbox" data-step-id="${escapeHtml(nextStep.id)}" />
                     <span class="next-step__check-icon"></span>
                     <span>Step complete</span>
                   </label>
@@ -316,11 +373,9 @@ function renderQuestDetail(questId) {
             });
           } else {
             nextStepSection.innerHTML = `
-              <div class="next-step">
-                <div class="next-step next-step--complete">
-                  <div class="next-step__label">ALL STEPS COMPLETE!</div>
-                  <div class="next-step__title">You've completed the Shadow of the Erdtree questlines!</div>
-                </div>
+              <div class="next-step next-step--complete">
+                <div class="next-step__label">ALL STEPS COMPLETE!</div>
+                <div class="next-step__title">You've completed the Shadow of the Erdtree questlines!</div>
               </div>
             `;
           }
@@ -342,5 +397,10 @@ fetch("./data/quests.json")
   })
   .catch((err) => {
     console.error("Failed to load quests:", err);
-    document.getElementById("content").innerHTML = `<p style="color: red;">Error loading quests: ${err.message}</p>`;
+    const errorEl = document.createElement("p");
+    errorEl.style.color = "red";
+    errorEl.textContent = `Error loading quests: ${err.message}`;
+    const contentEl = document.getElementById("content");
+    contentEl.innerHTML = "";
+    contentEl.appendChild(errorEl);
   });
