@@ -91,34 +91,7 @@ Alexander, Blaidd, Hyetta, White Mask Varre, Patches, Dung Eater, Sellen, Rogier
 ## Tips
 
 - **No Spoilers** — All quest descriptions are vague enough to not spoil major twists
-- **On the Go** — Access the app from your phone on the same WiFi as your laptop (see [local network sharing](#local-network-access))
 - **Custom Data** — Want to add more quests? Edit `data/quests.json`
-
-## Local Network Access
-
-To access the tracker from another device on your WiFi:
-
-1. Find your laptop's IP address:
-   ```bash
-   ifconfig | grep inet
-   ```
-   Look for something like `192.168.1.100`
-
-2. On your phone, open:
-   ```
-   http://YOUR-IP:5173
-   ```
-
-Your progress will sync instantly since both devices hit the same server.
-
-## Learning Notes
-
-This project was built as a learning exercise in web development, git, and GitHub. It demonstrates:
-- Setting up a project with npm and Vite
-- HTML/CSS/JavaScript (no frameworks)
-- localStorage for client-side data persistence
-- Git version control and GitHub workflows
-- Building a functional web app from scratch
 
 ## Future Ideas
 
