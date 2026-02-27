@@ -41,6 +41,41 @@ header h1 {
   font-size: 0.9rem;
 }
 
+/* ---- Dashboard ---- */
+
+.dashboard {
+  background: #1c1c2a;
+  border: 1px solid #2a2a3d;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard__stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat__value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c8a84e;
+  line-height: 1.2;
+}
+
+.stat__label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6b6b80;
+}
+
 /* ---- Quest Grid ---- */
 
 .quest-grid {

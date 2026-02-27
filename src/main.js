@@ -29,7 +29,38 @@ function renderQuestList() {
   currentView = "list";
   currentQuestId = null;
 
+  // Calculate overall stats
+  const totalSteps = questData.reduce((sum, q) => sum + q.steps.length, 0);
+  const completedSteps = questData.reduce(
+    (sum, q) => sum + q.steps.filter((s) => progress[s.id]).length,
+    0
+  );
+  const completedQuests = questData.filter((q) => {
+    const { completed, total } = getQuestProgress(q);
+    return completed === total && total > 0;
+  }).length;
+  const overallPercent = Math.round((completedSteps / totalSteps) * 100);
+
   const html = `
+    <div class="dashboard">
+      <div class="dashboard__stats">
+        <div class="stat">
+          <span class="stat__value">${overallPercent}%</span>
+          <span class="stat__label">Overall</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">${completedQuests}/${questData.length}</span>
+          <span class="stat__label">Quests</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">${completedSteps}/${totalSteps}</span>
+          <span class="stat__label">Steps</span>
+        </div>
+      </div>
+      <div class="progress-bar progress-bar--large">
+        <div class="progress-bar__fill" style="width: ${overallPercent}%"></div>
+      </div>
+    </div>
     <div class="quest-grid">
       ${questData
         .map((quest) => {
