@@ -136,8 +136,8 @@
       },
       {
         "id": "goldmask-3",
-        "title": "Find them at the Mountaintops of the Giants",
-        "description": "Travel to the Stargazers' Ruins in the Mountaintops of the Giants. Goldmask is still pondering the Erdtree's nature."
+        "title": "Find them at the bridge near the Altus Minor Erdtree",
+        "description": "Travel north from the Erdtree-Gazing Hill. Find Goldmask and Corhyn on the bridge just north of the Church of the Plague, near the Minor Erdtree in Altus. Goldmask continues to ponder the Erdtree."
       },
       {
         "id": "goldmask-4",
@@ -152,7 +152,7 @@
       {
         "id": "goldmask-6",
         "title": "Return to Goldmask with the answer",
-        "description": "Go back to Goldmask at the Mountaintops. Speak with Corhyn who is now perplexed. The truth drives a wedge between them."
+        "description": "After learning the truth in Leyndell, return to Goldmask and Corhyn — they have now moved to the Stargazers' Ruins in the Mountaintops of the Giants. Speak with Corhyn, who is perplexed by the revelation. The truth drives a wedge between them."
       },
       {
         "id": "goldmask-7",
@@ -216,12 +216,12 @@
       {
         "id": "mill-9",
         "title": "Help or hinder Millicent",
-        "description": "A golden summon sign appears near the Drainage Channel grace. Choose: assist Millicent against her sisters (receive Unalloyed Gold Needle), or invade her world (receive Millicent's Prosthesis)."
+        "description": "Defeat the Ulcerated Tree Spirit in the rot pond near the Drainage Channel grace — summon signs only appear after it is dead. Choose: assist Millicent against her sisters (receive Unalloyed Gold Needle), or invade her world (receive Millicent's Prosthesis)."
       },
       {
         "id": "mill-10",
         "title": "Use the needle on Malenia's Scarlet Flower",
-        "description": "After defeating Malenia, use the Unalloyed Gold Needle on the Scarlet Flower in her arena to receive Miquella's Needle — used to reverse the Frenzied Flame."
+        "description": "After defeating Malenia, reload the area so the Scarlet Flower blooms in her arena. Use the Unalloyed Gold Needle on it to receive Miquella's Needle (used to reverse the Frenzied Flame) and a Somber Ancient Dragon Smithing Stone."
       }
     ]
   },
@@ -260,7 +260,7 @@
       {
         "id": "alex-6",
         "title": "Duel Alexander at Crumbling Farum Azula",
-        "description": "After defeating the Godskin Duo in Farum Azula, find Alexander near the Dragon Temple Lift. Accept his challenge to an honorable duel. Receive Alexander's Innards and the Shard of Alexander talisman."
+        "description": "After defeating the Godskin Duo in Farum Azula, find Alexander behind a Stonesword Key fog wall near the Dragon Temple Lift grace. Accept his challenge to an honorable duel. Receive Alexander's Innards and the Shard of Alexander talisman."
       }
     ]
   },
@@ -323,7 +323,7 @@
       {
         "id": "hyetta-1",
         "title": "Meet Hyetta at the Lake-Facing Cliffs",
-        "description": "Find Hyetta near the Lake-Facing Cliffs grace in Liurnia. Give her a Shabriri Grape (dropped by Godrick Soldiers or found in Liurnia)."
+        "description": "Find Hyetta near the Lake-Facing Cliffs grace in Liurnia. Give her a Shabriri Grape — these are fixed-location unique items, not enemy drops. One can be found near Edgar the Revenger at the Rose Church, and another at the Purified Ruins."
       },
       {
         "id": "hyetta-2",
@@ -425,8 +425,8 @@
       },
       {
         "id": "patches-6",
-        "title": "Find Patches at Shaded Castle or Farum Azula",
-        "description": "Patches may invade near the Shaded Castle or at Crumbling Farum Azula as a Bloody Finger. Defeat him for loot. He survives."
+        "title": "Find Patches at the Shaded Castle",
+        "description": "Find Patches as a friendly NPC in the hallway before Elemer of the Briar in the Shaded Castle. He gives you the Dancer's Castanets to deliver to Tanith at Volcano Manor."
       }
     ]
   },
@@ -450,7 +450,7 @@
       {
         "id": "dung-3",
         "title": "Free the Dung Eater's body",
-        "description": "Find the Dung Eater imprisoned in the Subterranean Shunning-Grounds beneath Leyndell. Obtain the Sewer-Gaol Key from the Twin Maiden Husks and free him."
+        "description": "Find the Dung Eater imprisoned in the Subterranean Shunning-Grounds beneath Leyndell. Obtain the Sewer-Gaol Key by showing the first Seedbed Curse to the Dung Eater's phantom at Roundtable Hold — he gives you the key. Use it to free his body."
       },
       {
         "id": "dung-4",
@@ -923,7 +923,7 @@
       {
         "id": "rya-6",
         "title": "Decide Rya's fate",
-        "description": "Obtain the Tonic of Forgetfulness from Tanith (after asking Rya about it). Give it to Rya so she forgets her serpent form, OR give her the Empyrean Ashes to let her choose her own fate."
+        "description": "Obtain the Tonic of Forgetfulness from Tanith (after asking Rya about it). Give it to Rya so she forgets her serpent form, OR defeat Rykard first — if Rykard is dead when you speak to her, Rya chooses to leave of her own accord, ending her quest peacefully."
       }
     ]
   },
@@ -1088,7 +1088,7 @@
       {
         "id": "seluvis-3",
         "title": "Decide what to do with the potion",
-        "description": "You can give the potion to Nepheli (ruins her quest), feed it to the Dung Eater (affects his quest), or discard it at Pidia, Carian Servant."
+        "description": "You can give the potion to Nepheli (ruins her quest), feed it to the Dung Eater (affects his quest), or give it to Gideon Ofnir at Roundtable Hold — he will dispose of it. Then lie to Seluvis that Nepheli took the potion to continue his questline."
       },
       {
         "id": "seluvis-4",
@@ -1236,14 +1236,14 @@
       {
         "id": "ansbach-5",
         "title": "Deliver the Secret Rite Scroll",
-        "description": "At Shadow Keep's Storehouse First Floor, speak to Freyja then inform Ansbach of her choice. Find the Secret Rite Scroll behind bookshelves and give it to him. Rest at a Site of Grace to receive the Letter for Freyja.",
+        "description": "Speak to Freyja on the Seventh Floor of Shadow Keep's Storehouse, then inform Ansbach of her choice at the First Floor. Find the Secret Rite Scroll on the Seventh Floor (behind bookshelves) and give it to him. Rest at a Site of Grace to receive the Letter for Freyja.",
         "note": "Must be completed before advancing to Enir-Ilim, or Ansbach's quest ends early.",
         "sequenceOrder": 28
       },
       {
         "id": "ansbach-6",
         "title": "Survive Leda's invasion",
-        "description": "During Hornsent's questline, choose to help Ansbach against Needle Knight Leda.",
+        "description": "Needle Knight Leda hunts Ansbach as a traitor. When invaders appear, choose to fight alongside Ansbach against Leda.",
         "sequenceOrder": 37
       },
       {
@@ -1405,7 +1405,7 @@
       {
         "id": "moore-6",
         "title": "Break Miquella's Charm",
-        "description": "Progress through the story to the point where Miquella's Charm is broken at the Sealing Tree.",
+        "description": "Progress to Shadow Keep and defeat the Golden Hippopotamus. Approaching Shadow Keep causes Miquella's Charm to break, freeing you from its compulsion.",
         "sequenceOrder": 29
       },
       {
@@ -1459,7 +1459,7 @@
       {
         "id": "freyja-5",
         "title": "Deliver the Letter for Freyja",
-        "description": "Speak with Ansbach on the First Floor about Freyja's situation. Obtain the Secret Rite Scroll from the Fourth Floor and give it to Ansbach. Receive the Letter for Freyja.",
+        "description": "Speak with Ansbach on the First Floor about Freyja's situation. Obtain the Secret Rite Scroll from the Seventh Floor and give it to Ansbach. Receive the Letter for Freyja.",
         "sequenceOrder": 34
       },
       {
