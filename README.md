@@ -1,11 +1,11 @@
 # Elden Questlog
 
-A quest tracker for **Elden Ring**. Track your progress through all 28 NPC questlines in the Lands Between — never miss a step again.
+A quest tracker for **Elden Ring**. Track your progress through all 40 NPC questlines in the Lands Between — never miss a step again.
 
 ## Features
 
-- **28 Complete Questlines** — All major and side NPC quests, including Ranni, Fia, Alexander, Sellen, and more
-- **178 Quest Steps** — Detailed step-by-step guidance for each questline
+- **40 Complete Questlines** — All major and side NPC quests, including Ranni, Fia, Alexander, Sellen, and more
+- **252 Quest Steps** — Detailed step-by-step guidance for each questline
 - **Progress Tracking** — Check off steps as you complete them. Progress saves automatically
 - **Dashboard** — See your overall completion percentage and quest stats at a glance
 - **Dark Theme** — Elden Ring-inspired dark interface with gold accents
@@ -73,7 +73,7 @@ elden-questlog/
 │   ├── main.js            # JavaScript logic
 │   └── style.css          # Styling
 ├── data/
-│   └── quests.json        # Quest data (28 questlines, 178 steps)
+│   └── quests.json        # Quest data (40 questlines, 252 steps)
 ├── COMMANDS.txt           # Git/terminal command reference
 └── README.md              # This file
 ```
