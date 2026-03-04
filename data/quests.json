@@ -137,7 +137,7 @@
       {
         "id": "goldmask-3",
         "title": "Find them at the bridge near the Altus Minor Erdtree",
-        "description": "Travel north from the Erdtree-Gazing Hill. Find Goldmask and Corhyn on the bridge just north of the Church of the Plague, near the Minor Erdtree in Altus. Goldmask continues to ponder the Erdtree."
+        "description": "Find Goldmask on the north end of the Forest-Spanning Greatbridge in Altus Plateau. Speak with Corhyn at the Altus Highway Junction first so he moves to join him."
       },
       {
         "id": "goldmask-4",
@@ -152,7 +152,7 @@
       {
         "id": "goldmask-6",
         "title": "Return to Goldmask with the answer",
-        "description": "After learning the truth in Leyndell, return to Goldmask and Corhyn — they have now moved to the Stargazers' Ruins in the Mountaintops of the Giants. Speak with Corhyn, who is perplexed by the revelation. The truth drives a wedge between them."
+        "description": "After learning the truth in Leyndell, return to Goldmask and Corhyn \u2014 they have now moved to the Stargazers' Ruins in the Mountaintops of the Giants. Speak with Corhyn, who is perplexed by the revelation. The truth drives a wedge between them."
       },
       {
         "id": "goldmask-7",
@@ -181,7 +181,7 @@
       {
         "id": "mill-2",
         "title": "Bring the needle to Gowry",
-        "description": "Give the needle to Gowry at his shack in southern Caelid. Rest at a grace and return — he repairs it."
+        "description": "Give the needle to Gowry at his shack in southern Caelid. Rest at a grace and return \u2014 he repairs it."
       },
       {
         "id": "mill-3",
@@ -216,7 +216,7 @@
       {
         "id": "mill-9",
         "title": "Help or hinder Millicent",
-        "description": "Defeat the Ulcerated Tree Spirit in the rot pond near the Drainage Channel grace — summon signs only appear after it is dead. Choose: assist Millicent against her sisters (receive Unalloyed Gold Needle), or invade her world (receive Millicent's Prosthesis)."
+        "description": "Defeat the Ulcerated Tree Spirit in the rot pond near the Drainage Channel grace \u2014 summon signs only appear after it is dead. Choose: assist Millicent against her sisters (receive Unalloyed Gold Needle), or invade her world (receive Millicent's Prosthesis)."
       },
       {
         "id": "mill-10",
@@ -323,7 +323,7 @@
       {
         "id": "hyetta-1",
         "title": "Meet Hyetta at the Lake-Facing Cliffs",
-        "description": "Find Hyetta near the Lake-Facing Cliffs grace in Liurnia. Give her a Shabriri Grape — these are fixed-location unique items, not enemy drops. One can be found near Edgar the Revenger at the Rose Church, and another at the Purified Ruins."
+        "description": "Find Hyetta near the Lake-Facing Cliffs grace in Liurnia. Give her a Shabriri Grape \u2014 these are fixed-location unique items, not enemy drops. One can be found near Edgar the Revenger at the Rose Church, and another at the Purified Ruins."
       },
       {
         "id": "hyetta-2",
@@ -372,7 +372,7 @@
       {
         "id": "varre-4",
         "title": "Soak the cloth in maiden's blood",
-        "description": "Receive the Lord of Blood's Favor from Varre. Soak it in the blood of a dead maiden — either at the Church of Inhibition in Liurnia or at the Four Belfries finger maiden."
+        "description": "Receive the Lord of Blood's Favor from Varre. Soak it in the blood of a dead maiden \u2014 either at the Church of Inhibition in Liurnia or at the Four Belfries finger maiden."
       },
       {
         "id": "varre-5",
@@ -401,7 +401,7 @@
       {
         "id": "patches-1",
         "title": "Encounter Patches at Murkwater Cave",
-        "description": "Enter Murkwater Cave in Limgrave. Patches triggers a trap — defeat him, then spare him when he begs for mercy."
+        "description": "Enter Murkwater Cave in Limgrave. Patches triggers a trap \u2014 defeat him, then spare him when he begs for mercy."
       },
       {
         "id": "patches-2",
@@ -411,7 +411,7 @@
       {
         "id": "patches-3",
         "title": "Encounter Patches at Scenic Isle",
-        "description": "Find Patches on the small island in Liurnia of the Lakes. He tries to trick you again — speak with him until he gives up the Missionary's Cookbook."
+        "description": "Find Patches on the small island in Liurnia of the Lakes. He tries to trick you again \u2014 speak with him until he gives up the Missionary's Cookbook."
       },
       {
         "id": "patches-4",
@@ -420,13 +420,13 @@
       },
       {
         "id": "patches-5",
-        "title": "Deliver the letter for Patches",
-        "description": "Receive a letter from Patches asking you to deliver the Dancer's Castanets to Tanith at Volcano Manor. Do so."
+        "title": "Complete Patches' request at Volcano Manor",
+        "description": "Patches gives you a letter to assassinate Great Horned Tragoth at Magma Wyrm Makar's arena. Do so and return to him for the Bull-Goat Set."
       },
       {
         "id": "patches-6",
         "title": "Find Patches at the Shaded Castle",
-        "description": "Find Patches as a friendly NPC in the hallway before Elemer of the Briar in the Shaded Castle. He gives you the Dancer's Castanets to deliver to Tanith at Volcano Manor."
+        "description": "Find Patches at the Shaded Castle near the boss arena. He gives you the Dancer's Castanets to deliver to Tanith."
       }
     ]
   },
@@ -440,7 +440,7 @@
       {
         "id": "dung-1",
         "title": "Find a Seedbed Curse",
-        "description": "Obtain a Seedbed Curse — one is found on a corpse in Leyndell, Royal Capital (above the Avenue Balcony grace)."
+        "description": "Obtain a Seedbed Curse \u2014 one is found on a corpse in Leyndell, Royal Capital (above the Avenue Balcony grace)."
       },
       {
         "id": "dung-2",
@@ -450,7 +450,7 @@
       {
         "id": "dung-3",
         "title": "Free the Dung Eater's body",
-        "description": "Find the Dung Eater imprisoned in the Subterranean Shunning-Grounds beneath Leyndell. Obtain the Sewer-Gaol Key by showing the first Seedbed Curse to the Dung Eater's phantom at Roundtable Hold — he gives you the key. Use it to free his body."
+        "description": "Find the Dung Eater imprisoned in the Subterranean Shunning-Grounds beneath Leyndell. Obtain the Sewer-Gaol Key by showing the first Seedbed Curse to the Dung Eater's phantom at Roundtable Hold \u2014 he gives you the key. Use it to free his body."
       },
       {
         "id": "dung-4",
@@ -489,7 +489,7 @@
       {
         "id": "sellen-3",
         "title": "Report to Sellen",
-        "description": "Return to Sellen and show her the Sellian Seal. She asks you to find one more sorcerer — Master Lusat."
+        "description": "Return to Sellen and show her the Sellian Seal. She asks you to find one more sorcerer \u2014 Master Lusat."
       },
       {
         "id": "sellen-4",
@@ -519,7 +519,7 @@
       {
         "id": "sellen-9",
         "title": "Witness Sellen's transformation",
-        "description": "If you sided with Sellen, return to the Raya Lucaria Grand Library. Find Sellen has become a Graven Mass — a grotesque amalgamation of sorceress bodies, overwhelmed by the Primeval Current. Receive a Witch's Glintstone Crown."
+        "description": "If you sided with Sellen, return to the Raya Lucaria Grand Library. Find Sellen has become a Graven Mass \u2014 a grotesque amalgamation of sorceress bodies, overwhelmed by the Primeval Current. Receive a Witch's Glintstone Crown."
       }
     ]
   },
@@ -596,8 +596,8 @@
       },
       {
         "id": "nepheli-5",
-        "title": "Give Kenneth Haight the Erdsteel Dagger",
-        "description": "Find Kenneth Haight at Fort Haight and complete his quest. Give him the Erdsteel Dagger if he asks. He becomes Nepheli's advisor."
+        "title": "Move Kenneth Haight to Fort Haight",
+        "description": "Ensure Kenneth Haight has moved back to Fort Haight after you cleared it. He must be there for the final step to trigger."
       },
       {
         "id": "nepheli-6",
@@ -631,7 +631,7 @@
       {
         "id": "roderika-4",
         "title": "Convince Hewg to teach Roderika",
-        "description": "Speak with Master Hewg at Roundtable Hold about Roderika's potential. Then speak with Roderika — repeat until Hewg agrees to train her."
+        "description": "Speak with Master Hewg at Roundtable Hold about Roderika's potential. Then speak with Roderika \u2014 repeat until Hewg agrees to train her."
       },
       {
         "id": "roderika-5",
@@ -694,7 +694,7 @@
       {
         "id": "latenna-1",
         "title": "Obtain the Haligtree Secret Medallion (Right)",
-        "description": "Find the right half of the medallion in the Village of the Albinaurics in southwest Liurnia (hidden in a pot, revealed by hitting it)."
+        "description": "Find Albus in the Village of the Albinaurics, Liurnia. Hit the pot he is disguised as and speak to him to receive the Haligtree Secret Medallion (Right)."
       },
       {
         "id": "latenna-2",
@@ -709,7 +709,7 @@
       {
         "id": "latenna-4",
         "title": "Assemble the full medallion",
-        "description": "Obtain the left half of the Haligtree Secret Medallion from Albus in the Village of the Albinaurics. Use both halves at the Grand Lift of Rold to reach the Consecrated Snowfield."
+        "description": "Obtain the left half of the Haligtree Secret Medallion from Castle Sol in the Mountaintops of the Giants, after defeating Commander Niall. Use both halves at the Grand Lift of Rold to reach the Consecrated Snowfield."
       },
       {
         "id": "latenna-5",
@@ -733,12 +733,12 @@
       {
         "id": "kenneth-2",
         "title": "Clear Fort Haight",
-        "description": "Fight your way through Fort Haight and defeat the Night's Cavalry boss inside. Return to Kenneth for his gratitude and a reward."
+        "description": "Fight your way through Fort Haight and defeat the Godrick Knight at the top. Return to Kenneth for his gratitude and the Erdsteel Dagger."
       },
       {
         "id": "kenneth-3",
         "title": "Find Kenneth at Fort Haight",
-        "description": "After Godrick's death, return to Fort Haight. Kenneth is there but frustrated — he cannot find a worthy heir for Stormveil."
+        "description": "After Godrick's death, return to Fort Haight. Kenneth is there but frustrated \u2014 he cannot find a worthy heir for Stormveil."
       },
       {
         "id": "kenneth-4",
@@ -811,7 +811,7 @@
       {
         "id": "jar-3",
         "title": "Tell Jar-Bairn about Alexander",
-        "description": "Tell Jar-Bairn about Iron Fist Alexander — his hero. He is overjoyed to hear Alexander is real."
+        "description": "Tell Jar-Bairn about Iron Fist Alexander \u2014 his hero. He is overjoyed to hear Alexander is real."
       },
       {
         "id": "jar-4",
@@ -863,7 +863,7 @@
     "id": "gowry",
     "npc": "Gowry",
     "location": "Gowry's Shack, Caelid",
-    "description": "An elderly sage living in Caelid who is secretly connected to Millicent's quest — and to a far darker power.",
+    "description": "An elderly sage living in Caelid who is secretly connected to Millicent's quest \u2014 and to a far darker power.",
     "category": "side",
     "steps": [
       {
@@ -874,7 +874,7 @@
       {
         "id": "gowry-2",
         "title": "Bring Gowry the needle",
-        "description": "Defeat Commander O'Neil and bring the damaged Unalloyed Gold Needle to Gowry. Rest at a grace and return — he repairs it."
+        "description": "Defeat Commander O'Neil and bring the damaged Unalloyed Gold Needle to Gowry. Rest at a grace and return \u2014 he repairs it."
       },
       {
         "id": "gowry-3",
@@ -923,7 +923,7 @@
       {
         "id": "rya-6",
         "title": "Decide Rya's fate",
-        "description": "Obtain the Tonic of Forgetfulness from Tanith (after asking Rya about it). Give it to Rya so she forgets her serpent form, OR defeat Rykard first — if Rykard is dead when you speak to her, Rya chooses to leave of her own accord, ending her quest peacefully."
+        "description": "Obtain the Tonic of Forgetfulness from Tanith (after asking Rya about it). Give it to Rya so she forgets her serpent form, OR defeat Rykard first \u2014 if Rykard is dead when you speak to her, Rya chooses to leave of her own accord, ending her quest peacefully."
       }
     ]
   },
@@ -962,7 +962,7 @@
       {
         "id": "manor-6",
         "title": "Speak with Tanith after Rykard",
-        "description": "Return to Tanith's room after defeating Rykard. She has fled — find her in Rykard's boss arena, doing something disturbing. This concludes the Volcano Manor storyline."
+        "description": "Return to Tanith's room after defeating Rykard. She has fled \u2014 find her in Rykard's boss arena, doing something disturbing. This concludes the Volcano Manor storyline."
       }
     ]
   },
@@ -1039,7 +1039,7 @@
       {
         "id": "d-1",
         "title": "Meet D at Summonwater Village",
-        "description": "Find D at Summonwater Village in Limgrave, fighting undead. Speak with him — he warns you about those who live in death."
+        "description": "Find D at Summonwater Village in Limgrave, fighting undead. Speak with him \u2014 he warns you about those who live in death."
       },
       {
         "id": "d-2",
@@ -1072,7 +1072,7 @@
     "id": "seluvis",
     "npc": "Preceptor Seluvis",
     "location": "Seluvis's Rise, Three Sisters",
-    "description": "A conniving sorcerer who serves Ranni but secretly schemes to make puppets of anyone he can — including Ranni herself.",
+    "description": "A conniving sorcerer who serves Ranni but secretly schemes to make puppets of anyone he can \u2014 including Ranni herself.",
     "category": "side",
     "steps": [
       {
@@ -1088,7 +1088,7 @@
       {
         "id": "seluvis-3",
         "title": "Decide what to do with the potion",
-        "description": "You can give the potion to Nepheli (ruins her quest), feed it to the Dung Eater (affects his quest), or give it to Gideon Ofnir at Roundtable Hold — he will dispose of it. Then lie to Seluvis that Nepheli took the potion to continue his questline."
+        "description": "You can give the potion to Nepheli (ruins her quest), feed it to the Dung Eater (affects his quest), or give it to Gideon Ofnir at Roundtable Hold \u2014 he will dispose of it. Then lie to Seluvis that Nepheli took the potion to continue his questline."
       },
       {
         "id": "seluvis-4",
@@ -1098,12 +1098,12 @@
       {
         "id": "seluvis-5",
         "title": "Find Seluvis's secret puppet room",
-        "description": "Find the hidden room beneath Seluvis's Rise (a trapdoor outside). Inside is a collection of his puppet victims — including a familiar face."
+        "description": "Find the hidden room beneath Seluvis's Rise (a trapdoor outside). Inside is a collection of his puppet victims \u2014 including a familiar face."
       },
       {
         "id": "seluvis-6",
         "title": "Witness Seluvis's end",
-        "description": "After Ranni advances past a certain point in her questline, return to Seluvis's Rise. He has been turned into a puppet himself — reduced to a doll on the floor."
+        "description": "After Ranni advances past a certain point in her questline, return to Seluvis's Rise. He has been turned into a puppet himself \u2014 reduced to a doll on the floor."
       }
     ]
   },
@@ -1132,7 +1132,7 @@
       {
         "id": "bernahl-4",
         "title": "Encounter Bernahl at Crumbling Farum Azula",
-        "description": "After the Erdtree burns, find Bernahl near the Godskin Duo boss room in Crumbling Farum Azula. He invades as a Bloody Finger alongside a fellow invader."
+        "description": "After the Erdtree burns, Bernahl can be summoned for the Godskin Duo. Later, he invades as Recusant Bernahl near the Beside the Great Bridge grace in Farum Azula."
       },
       {
         "id": "bernahl-5",
@@ -1145,7 +1145,7 @@
     "id": "leda",
     "npc": "Needle Knight Leda",
     "location": "Mohgwyn Palace / Shadow Realm",
-    "description": "A devoted follower of Miquella who leads his companions into the Shadow Realm. Her loyalty is fierce — and her judgment of others, uncompromising.",
+    "description": "A devoted follower of Miquella who leads his companions into the Shadow Realm. Her loyalty is fierce \u2014 and her judgment of others, uncompromising.",
     "category": "dlc",
     "steps": [
       {
@@ -1170,7 +1170,7 @@
         "id": "leda-4",
         "title": "Meet Leda at Highroad Cross",
         "description": "Travel to Scadu Altus and exhaust all dialogue with Leda at the Highroad Cross Site of Grace.",
-        "note": "Speak to all followers before breaking Miquella's Great Rune — that event shifts everyone's dialogue.",
+        "note": "Speak to all followers before breaking Miquella's Great Rune \u2014 that event shifts everyone's dialogue.",
         "sequenceOrder": 16
       },
       {
@@ -1341,7 +1341,7 @@
         "id": "thiollier-4",
         "title": "Drink St. Trina's Nectar",
         "description": "Imbibe the nectar four or more times until you hear her voice on the death screen. Rest at a Site of Grace between attempts.",
-        "note": "Must be done before Thiollier leaves for Enir-Ilim. Each drink deals damage — rest between attempts.",
+        "note": "Must be done before Thiollier leaves for Enir-Ilim. Each drink deals damage \u2014 rest between attempts.",
         "sequenceOrder": 23
       },
       {
@@ -1387,12 +1387,12 @@
         "id": "moore-3",
         "title": "Receive the Black Syrup",
         "description": "Return to Moore at Belurat and speak with him to receive the Black Syrup. Complete this before Moore leaves his location.",
-        "note": "Must be obtained before breaking Miquella's Great Rune — after that, Moore moves on and the syrup is missed permanently.",
+        "note": "Must be obtained before breaking Miquella's Great Rune \u2014 after that, Moore moves on and the syrup is missed permanently.",
         "sequenceOrder": 11
       },
       {
         "id": "moore-4",
-        "title": "Collect Forager Brood Cookbooks 1–6",
+        "title": "Collect Forager Brood Cookbooks 1\u20136",
         "description": "Find the six cookbooks from friendly Forager Brood pests scattered across the Land of Shadow. Cookbook 4 requires using a Warming Stone on a frozen pest.",
         "sequenceOrder": 13
       },
@@ -1440,14 +1440,14 @@
         "id": "freyja-2",
         "title": "Summon Freyja for the Dancing Lion (optional)",
         "description": "Use her summon sign to help defeat the Divine Beast Dancing Lion in Belurat Tower Settlement. Return to Three-Path Cross afterward for additional dialogue.",
-        "note": "Must be done before breaking Miquella's Great Rune — this step becomes unavailable after that event.",
+        "note": "Must be done before breaking Miquella's Great Rune \u2014 this step becomes unavailable after that event.",
         "sequenceOrder": 12
       },
       {
         "id": "freyja-3",
         "title": "Return after breaking Miquella's Great Rune",
         "description": "After the rune-breaking event, return to Three-Path Cross and exhaust Freyja's dialogue. She mentions striking out on her own.",
-        "note": "Do this before entering Shadow Keep's interior — she relocates to the Storehouse shortly after.",
+        "note": "Do this before entering Shadow Keep's interior \u2014 she relocates to the Storehouse shortly after.",
         "sequenceOrder": 20
       },
       {
@@ -1473,6 +1473,221 @@
         "title": "Final battle at Enir-Ilim",
         "description": "Fight Freyja alongside other NPC allies at the Cleansing Chamber Anteroom. Loot her equipment after the battle.",
         "sequenceOrder": 42
+      }
+    ]
+  },
+  {
+    "id": "yura",
+    "npc": "Bloody Finger Hunter Yura",
+    "location": "Agheel Lake, Limgrave",
+    "description": "A mysterious hunter who tracks down those who have been corrupted by the blood-soaked finger. He warns of the dangers of Agheel Lake.",
+    "category": "side",
+    "steps": [
+      {
+        "id": "yura-1",
+        "title": "Meet Yura near Agheel Lake",
+        "description": "Find Yura under a large piece of ruin south of Agheel Lake. He warns you about the dragon."
+      },
+      {
+        "id": "yura-2",
+        "title": "Help Yura defeat Nerijus",
+        "description": "Walk up the river north of Agheel Lake. When Bloody Finger Nerijus invades, stay alive until Yura arrives to help. Speak with him further up the river afterward."
+      },
+      {
+        "id": "yura-3",
+        "title": "Help Yura at Raya Lucaria",
+        "description": "Find a red summon sign on the bridge north of the Main Academy Gate. Help Yura defeat Bloody Finger Ravenmount Assassin. Speak with him on the bridge afterward."
+      },
+      {
+        "id": "yura-4",
+        "title": "Meet Yura at the Second Church of Marika",
+        "description": "Find Yura mortally wounded at the Second Church of Marika in Altus Plateau. Receive the Nagakiba. Defeat Eleonora, Violet Bloody Finger, who invades immediately after."
+      },
+      {
+        "id": "yura-5",
+        "title": "Encounter Shabriri",
+        "description": "Find Shabriri occupying Yura's body at the Zamor Ruins in the Mountaintops of the Giants. He urges you to inherit the Flame of Frenzy."
+      }
+    ]
+  },
+  {
+    "id": "gurranq",
+    "npc": "Gurranq, Beast Clergyman",
+    "location": "Bestial Sanctum, Caelid",
+    "description": "A massive, perpetually hungry beast-man who consumes Deathroot to sate his eternal craving.",
+    "category": "side",
+    "steps": [
+      {
+        "id": "gurranq-1",
+        "title": "Meet D at Summonwater Village",
+        "description": "Defeat the Tibia Mariner at Summonwater Village. Speak with D nearby or at Roundtable Hold to be shown the way to Gurranq."
+      },
+      {
+        "id": "gurranq-2",
+        "title": "Deliver Deathroot",
+        "description": "Feed Deathroot to Gurranq at the Bestial Sanctum. He gives you bestial incantations and items in return."
+      },
+      {
+        "id": "gurranq-3",
+        "title": "Subdue Gurranq",
+        "description": "After feeding him 4 Deathroots, Gurranq will become hostile. Reduce his health until he surrenders."
+      },
+      {
+        "id": "gurranq-4",
+        "title": "Deliver all Deathroot",
+        "description": "Feed Gurranq all 9 Deathroots found in the game. He will finally depart, leaving behind a Somber Ancient Dragon Smithing Stone."
+      }
+    ]
+  },
+  {
+    "id": "gostoc",
+    "npc": "Gatekeeper Gostoc",
+    "location": "Stormveil Castle",
+    "description": "The bitter gatekeeper of Stormveil who stalks you through the castle, stealing a portion of your runes whenever you die.",
+    "category": "side",
+    "steps": [
+      {
+        "id": "gostoc-1",
+        "title": "Meet Gostoc at the gate",
+        "description": "Speak with Gostoc at the main gate of Stormveil. He advises you to take the side path."
+      },
+      {
+        "id": "gostoc-2",
+        "title": "Survive the dark room trap",
+        "description": "In the room with the Banished Knight that gets locked, Gostoc is the one who locks it. Find him later and he will open a shop."
+      },
+      {
+        "id": "gostoc-3",
+        "title": "Gostoc stomps on Godrick",
+        "description": "After defeating Godrick, Gostoc appears in the arena, stomping on Godrick's remains. Speak with him."
+      },
+      {
+        "id": "gostoc-4",
+        "title": "Gostoc in the throne room",
+        "description": "If Nepheli and Kenneth's quests are completed, Gostoc moves to the throne room and sells an Ancient Dragon Smithing Stone."
+      }
+    ]
+  },
+  {
+    "id": "igon",
+    "npc": "Igon",
+    "location": "Gravesite Plain / Jagged Peak",
+    "description": "A broken but fiercely determined warrior whose life's goal is to slay the dread dragon Bayle.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "igon-1",
+        "title": "Meet Igon at the Pillar Path",
+        "description": "Find Igon wailing in pain on the road towards the Jagged Peak in Gravesite Plain.",
+        "sequenceOrder": 10
+      },
+      {
+        "id": "igon-2",
+        "title": "Defeat the Jagged Peak Drakes",
+        "description": "Defeat the two drakes fighting each other on the way up Jagged Peak. Igon will appear nearby and give you his Furling Finger.",
+        "sequenceOrder": 20
+      },
+      {
+        "id": "igon-3",
+        "title": "Summon Igon for Bayle",
+        "description": "Inside Bayle the Dread's arena, find Igon's summon sign. Summon him to witness his legendary voice lines and aid in the hunt.",
+        "sequenceOrder": 30
+      },
+      {
+        "id": "igon-4",
+        "title": "Collect Igon's equipment",
+        "description": "After defeating Bayle, return to where you met Igon after the drakes to collect his armor, Greatbow, and Bell Bearing.",
+        "sequenceOrder": 40
+      }
+    ]
+  },
+  {
+    "id": "ymir",
+    "npc": "Count Ymir & Jolan",
+    "location": "Cathedral of Manus Metyr",
+    "description": "A scholarly count obsessed with the stars and the mother of all fingers, guarded by the stoic night-knight Jolan.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "ymir-1",
+        "title": "Meet Ymir at the Cathedral",
+        "description": "Find Count Ymir at the Cathedral of Manus Metyr in Scadu Altus. He gives you a Hole-Laden Necklace and a map.",
+        "sequenceOrder": 11
+      },
+      {
+        "id": "ymir-2",
+        "title": "Sound the first bell at Ruins of Rhia",
+        "description": "Travel to the Finger Ruins of Rhia in the south and sound the bell. Return to Ymir for a second map.",
+        "sequenceOrder": 18
+      },
+      {
+        "id": "ymir-3",
+        "title": "Sound the second bell at Ruins of Dheo",
+        "description": "Travel to the Finger Ruins of Dheo in the northeast and sound the bell. Return to Ymir for a third map.",
+        "sequenceOrder": 25
+      },
+      {
+        "id": "ymir-4",
+        "title": "Sound the third bell beneath the Cathedral",
+        "description": "When Ymir is away from his throne, interact with it to reveal a path to the Finger Ruins of Miyr. Sound the third bell.",
+        "sequenceOrder": 35
+      },
+      {
+        "id": "ymir-5",
+        "title": "Defeat Metyr, Mother of Fingers",
+        "description": "After sounding the third bell, you are transported to fight Metyr. Defeat her.",
+        "sequenceOrder": 36
+      },
+      {
+        "id": "ymir-6",
+        "title": "Defeat Jolan and Ymir",
+        "description": "Return to the Cathedral and defeat the invading Night Knight Jolan, then Count Ymir himself.",
+        "sequenceOrder": 37
+      },
+      {
+        "id": "ymir-7",
+        "title": "Give Jolan an Iris",
+        "description": "Find Jolan's spirit near a pillar. Give her an Iris of Grace for her spirit ash, or an Iris of Occultation for her sword.",
+        "sequenceOrder": 38
+      }
+    ]
+  },
+  {
+    "id": "priestess",
+    "npc": "Dragon Communion Priestess",
+    "location": "Grand Altar of Dragon Communion",
+    "description": "A silent attendant at the altar of dragons who offers a path to becoming a dragon yourself.",
+    "category": "dlc",
+    "steps": [
+      {
+        "id": "priestess-1",
+        "title": "Meet the Priestess",
+        "description": "Find her at the Grand Altar of Dragon Communion south of the Jagged Peak. She asks you to slay Bayle.",
+        "sequenceOrder": 12
+      },
+      {
+        "id": "priestess-2",
+        "title": "Receive the Priestess's Blessing",
+        "description": "Talk to her and receive her blessing (consumable).",
+        "sequenceOrder": 13
+      },
+      {
+        "id": "priestess-3",
+        "title": "Give her Thiollier's Concoction (Optional)",
+        "description": "If you have Thiollier's Concoction, you can give it to her at night to alter her fate.",
+        "sequenceOrder": 22
+      },
+      {
+        "id": "priestess-4",
+        "title": "Slay Bayle the Dread",
+        "description": "Ascend the Jagged Peak and defeat the legendary dragon Bayle.",
+        "sequenceOrder": 31
+      },
+      {
+        "id": "priestess-5",
+        "title": "Collect your reward",
+        "description": "Return to the Altar. Depending on your choices, receive the Flowerstone Gavel or the Priestess Heart.",
+        "sequenceOrder": 41
       }
     ]
   }
